@@ -1,4 +1,4 @@
-# SHCode-Topki — Rankingi + GUI + PvP Points (Paper 1.21.8-1.21.11)
+# NexusTopki — Rankingi + GUI + PvP Points (Paper 1.21.8-1.21.11)
 
 Nowoczesny plugin na serwery **Paper** dodający rozbudowane rankingi graczy (topki), wygodne GUI oraz system punktów PvP z limiterem farmienia. Projektowany z myślą o serwerach survival/PvP, gdzie liczy się czytelna rywalizacja i szybki podgląd statystyk.
 
@@ -30,11 +30,11 @@ Plugin posiada wygodne GUI:
 W GUI (pod `/topki` lub `/ranking`) dostępna jest również zakładka **Ranking Klanów** prezentująca **TOP 60 klanów** (z paginacją).
 
 - Zakładka rankingu klanów jest obecna w GUI **zawsze** – niezależnie od tego, czy na serwerze działa plugin klanowy.
-- Jeżeli na serwerze **nie** ma pluginu **SHCode-Klan** (lub nie ma danych o klanach), ranking pozostanie **pusty**.
-- Jeżeli serwer posiada **SHCode-Klan**, punkty klanu są liczone jako **suma punktów (POINTS) wszystkich graczy należących do klanu**. W GUI widać łączny wynik klanu oraz jego pozycję w rankingu.
+- Jeżeli na serwerze **nie** ma pluginu **NexusKlan** (lub nie ma danych o klanach), ranking pozostanie **pusty**.
+- Jeżeli serwer posiada **NexusKlan**, punkty klanu są liczone jako **suma punktów (POINTS) wszystkich graczy należących do klanu**. W GUI widać łączny wynik klanu oraz jego pozycję w rankingu.
 
 #### Planowane (v1.1)
-W wersji **v1.1** zostanie dodana możliwość włączenia/wyłączenia rankingu klanów w konfiguracji SHCode-Topki:
+W wersji **v1.1** zostanie dodana możliwość włączenia/wyłączenia rankingu klanów w konfiguracji NexusTopki:
 - `rankingKlan: false` — zakładka rankingu klanów nie będzie widoczna w GUI.
 - `rankingKlan: true` — zakładka rankingu klanów będzie widoczna w GUI.
 
@@ -60,8 +60,8 @@ System PvP:
 - Jeżeli PlaceholderAPI jest zainstalowane, plugin może rejestrować własne placeholdery (zależnie od konfiguracji serwera).
 - Dodatkowo w GUI możliwe jest użycie placeholderów klanowych (np. tag i punkty klanu) w lore “Twoje Statystyki”.
 
-### SHCode-Klan (opcjonalnie)
-- Jeśli serwer posiada plugin **SHCode-Klan**, SHCode-Topki automatycznie wypełnia **ranking klanów** danymi.
+### NexusKlan (opcjonalnie)
+- Jeśli serwer posiada plugin **NexusKlan**, NexusTopki automatycznie wypełnia **ranking klanów** danymi.
 - Punkty klanu są obliczane jako **suma punktów graczy w klanie** (na podstawie rankingu POINTS).
 
 ---
@@ -104,24 +104,24 @@ Konfiguracje są przygotowane tak, aby dało się je przeładować bez restartu 
 ### Gracze
 - `/topki` — otwiera menu GUI  
   lub
-- `/ranking` — otwiera menu GUI *(jeśli dodasz alias w plugin.yml)*
+- `/ranking` — otwiera menu GUI
 
 ### Administracja
-- `/shtopki rl` — przeładowanie konfiguracji i ustawień runtime
-- `/shtopki rldb` — przeładowanie połączenia/ustawień bazy danych
-- `/shtopki add <typ> <wartość> <gracz>` — dodaje wartość do danej kategorii
-- `/shtopki remove <typ> <wartość> <gracz>` — odejmuje wartość z danej kategorii
+- `/atopki rl` — przeładowanie konfiguracji i ustawień runtime
+- `/atopki rldb` — przeładowanie połączenia/ustawień bazy danych
+- `/atopki add <typ> <wartość> <gracz>` — dodaje wartość do danej kategorii
+- `/atopki remove <typ> <wartość> <gracz>` — odejmuje wartość z danej kategorii
 
 Przykłady:
-- `/shtopki add points 25 Nick`
-- `/shtopki remove deaths 1 Nick`
+- `/atopki add points 25 Nick`
+- `/atopki remove deaths 1 Nick`
 
 ---
 
 ## Uprawnienia
 
-- `SHCode-Topki.admin` — dostęp do komend administracyjnych (`/shtopki ...`)
-- `SHCode-Topki.info` — otrzymywanie bossbara o autosave (jeśli włączone)
+- `NexusTopki.admin` — dostęp do komend administracyjnych (`/atopki ...`)
+- `NexusTopki.info` — otrzymywanie bossbara o autosave (jeśli włączone)
 
 ---
 
@@ -137,15 +137,15 @@ Przykłady:
 
 ## Wsparcie / Kontakt
 
-- Discord: **dc.nexusdev.pl**
-- Sklep / zakup: **nexusdev.pl**
+- Discord: **https://discord.gg/XbfP2gXVD7**
+- Sklep / zakup: **https://discord.gg/XbfP2gXVD7**
 - Autor: **ShadowYT**
 
 ---
 
 ## Cena
 
-**Cena: ... PLN** *(Plugin nie jest jeszcze dostępny na sprzedaż)*
+**Cena: PLN**
 
 Licencja przypisana do jednego właściciela:
 - **1 serwer** lub **1 sieć serwerów** (Network)
